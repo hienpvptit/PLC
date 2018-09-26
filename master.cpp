@@ -98,6 +98,38 @@ void Master_DeleteDevice(MASTER &master, uint8_t id_device)
 	master.id_devices = (uint8_t *)realloc(master.id_devices, master.num_devices);
 }
 
+/*----------------------------------------*/
+void String_nCopy(char *str_des, char *str_src, uint8_t start, uint8_t finish)
+{
+	uint8_t i, j=0;
+	for(i=start; i<=finish; i++)
+		str_des[j++] = str_src[i];
+	str_des[j] = '\0';
+}
+
+void String_Split(char *str_src, uint8_t ch_split, char str_res[][20], uint8_t &num_component)
+{
+	uint8_t i = 0;
+	uint8_t num = 0;
+	uint8_t tmp = 0;
+	uint8_t len = strlen(str_src);
+	for(i=0; i<len; i++)
+	{
+		if(str_src[i]==ch_split)
+		{
+			num++;
+			String_nCopy(str_res[num-1], str_src, tmp, i-1);
+			tmp = i+1;
+		}
+	}
+	if(tmp!=len-1)
+	{
+		num++;
+		String_nCopy(str_res[num-1], str_src, tmp, len-1);
+	}
+	num_component = num;
+}
+
 /*---------------------------------------*/
 void InforMaster(MASTER master)
 {
@@ -112,12 +144,12 @@ void InforMaster(MASTER master)
 
 int main()
 {
-	MASTER master = Master_Init();
-	Master_InsertDevice(master, 1);
-	Master_InsertDevice(master, 2);
-	Master_InsertDevice(master, 3);
-	InforMaster(master);
-	Master_DeleteDevice(master, 3);
-	InforMaster(master);
+	char str_res[10][20];
+	uint8_t num_component;
+	char str[] = "hello:hi:kaka";
+	String_Split(str, ':', str_res, num_component);
+	for(int i=0; i<3; i++)
+		cout<<str_res[i]<<endl;
+	cout<<"Num Component: "<<(uint16_t)num_component<<endl;
 	return 0;
 }
