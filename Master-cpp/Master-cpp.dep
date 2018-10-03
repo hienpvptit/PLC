@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>325553053</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\lib\PLC-master.cpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\cstring</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\stdexcept</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\exception</file>
+            <file>$TOOLKIT_DIR$\inc\c\cerrno</file>
+            <file>$PROJ_DIR$\uart.h</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\xstddef</file>
+            <file>$TOOLKIT_DIR$\inc\c\cstdio</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-master.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.o</file>
+            <file>$PROJ_DIR$\lib\stm8s_uart1.c</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\string</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.o</file>
+            <file>$PROJ_DIR$\lib\stm8s_conf.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-master.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.pbi</file>
+            <file>$PROJ_DIR$\lib\stm8s_gpio.c</file>
+            <file>$PROJ_DIR$\lib\PLC-master.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\uart.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\cstddef</file>
+            <file>$PROJ_DIR$\lib\stm8s_clk.c</file>
+            <file>$PROJ_DIR$\Debug\List\Master-cpp.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\cstdlib</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\xdebug</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale_c.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\clocale</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cctype</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\ios</file>
+            <file>$PROJ_DIR$\lib\stm8s_exti.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_flash.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\iostream</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\streambuf</file>
+            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_uart1.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim3.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_itc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim4.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim2.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocaleuse.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-master.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\ostream</file>
+            <file>$PROJ_DIR$\Debug\Exe\Master-cpp.out</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cstdint</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\climits</file>
+            <file>$PROJ_DIR$\Debug\Obj\Master-cpp.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\iosfwd</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\xstring</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_uart1.__cstat.et</file>
+            <file>$PROJ_DIR$\lib\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\lib\stm8s.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_clk.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\xlocnum</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\xiosbase</file>
+            <file>$PROJ_DIR$\Debug\Exe\Master-cpp.hex</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\ecpp\istream</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.pbi</file>
+            <file>$PROJ_DIR$\lib\PLC-uart.c</file>
+            <file>$PROJ_DIR$\lib\PLC-uart.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 66 32</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\PLC-master.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 27 48 91 65 42 83 8 41 70 38 59 73 86 55 53 74 44 37 68 35 11 62 60 63 33 72 49 87 39 40 89 56 76 61 36 50 5 7 10 30 46 78 77 2 4 34 71 22 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34 8 70 41 16 91 33 68 63 60 11 48 65 42 37 86 35 87 39 89 36 72 50 7 77 10 71 83 74 49 53 38 55 59 73 44 62 5 40 56 61 76 78 30 46 2 4 27 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 84</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 22 41 70 38 59 73 86 55 19 81 21 28 43 45 80 54 58 52 57 27 48 91 65 42 83 8 53 74 44 37 68 35 11 62 60 63 33 72 49 87 39 40 89 56 76 61 36 50 5 7 10 30 46 78 77 2 4 34 71 16 95</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81 70 52 35 10 41 27 86 45 22 71 74 39 89 7 28 54 21 83 49 53 87 36 72 50 77 91 19 80 95 38 55 59 73 43 58 57 11 68 63 60 34 48 16 65 42 8 37 33 44 62 5 40 56 61 76 78 30 46 2 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\stm8s_uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 51 81 22 41 70 38 59 73 86 55 19 28 43 45 80 54 58 52 57 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 43 81 21 58 22 86 80 57 19 41 38 55 59 73 28 45 54 52 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 80 81 22 41 70 38 59 73 86 55 19 28 43 45 54 58 52 57 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81 21 58 70 43 22 86 80 57 19 41 38 55 59 73 28 45 54 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 9 81 22 41 70 38 59 73 86 55 19 28 43 45 80 54 58 52 57 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 81 58 70 43 19 86 80 57 9 21 41 38 55 59 73 28 45 54 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\stm8s_clk.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 82</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 28 81 22 41 70 38 59 73 86 55 19 43 45 80 54 58 52 57 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38 55 45 81 41 73 52 19 59 28 54 22 21 70 86 43 80 58 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Master-cpp.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 67 69 13 14 17 18 6 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\PLC-uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 95 81 22 41 70 38 59 73 86 55 19 28 43 45 80 54 58 52 57 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 81 58 70 43 19 86 80 57 95 21 41 38 55 59 73 28 45 54 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
