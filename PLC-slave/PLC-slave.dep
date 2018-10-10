@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>1272116097</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\List\PLC-slave.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC.o</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\PLC-slave.hex</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\PLC-lib\stm8s_conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-uart.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\PLC-slave.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-slave.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\PLC-lib\stm8s.h</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.pbi</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.o</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-gpio.c</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-slave.h</file>
+            <file>$PROJ_DIR$\PLC-lib\PLC-slave.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-slave.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-slave.pbi</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 19 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PLC-lib\PLC.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 10 23 14 22 17 1 27 7 26 15 25 11 16 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 7 1 27 23 18 22 11 10 14 16 25 26 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\PLC-slave.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 0</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 24 5 33 37 20 9 2 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 23 14 22 35 10 17 1 27 7 26 15 25 11 16 18 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 23 27 35 10 1 25 11 14 17 16 7 26 15 18 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PLC-lib\PLC-uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 18 23 14 22 10 17 1 27 7 26 15 25 11 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23 27 14 7 1 10 18 11 22 17 16 25 26 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PLC-lib\PLC-gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 32 23 14 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23 14 32 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PLC-lib\PLC-slave.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 35 23 14 22 10 17 1 27 7 26 15 25 11 16 18 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23 27 10 14 1 25 11 35 32 22 17 16 7 26 15 18</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
