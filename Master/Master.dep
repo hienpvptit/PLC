@@ -5,129 +5,87 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\lib\stm8s_clk.h</file>
-            <file>$PROJ_DIR$\lib\stm8s.h</file>
-            <file>$PROJ_DIR$\lib\stm8s_exti.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\Master.pbd</file>
-            <file>$PROJ_DIR$\Debug\Exe\Master.out</file>
-            <file>$PROJ_DIR$\lib\PLC-uart.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.o</file>
-            <file>$PROJ_DIR$\lib\stm8s_tim2.h</file>
-            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-            <file>$PROJ_DIR$\lib\stm8s_gpio.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.pbi</file>
-            <file>$PROJ_DIR$\lib\stm8s_tim4.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-            <file>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.o</file>
-            <file>$PROJ_DIR$\lib\stm8s_itc.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\Master.hex</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\lib\stm8s_tim3.h</file>
-            <file>$PROJ_DIR$\lib\stm8s_flash.h</file>
-            <file>$PROJ_DIR$\Debug\List\Master.map</file>
-            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
-            <file>$PROJ_DIR$\lib\stm8s_gpio.h</file>
-            <file>$PROJ_DIR$\lib\stm8s_conf.h</file>
             <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\lib\PLC-gpio.c</file>
-            <file>$PROJ_DIR$\lib\PLC-uart.c</file>
-            <file>$PROJ_DIR$\lib\PLC-gpio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-master.o</file>
             <file>$PROJ_DIR$\lib\PLC-master.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\PLC-master.pbi</file>
+            <file>$PROJ_DIR$\lib\PLC-uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\Master.hex</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_gpio.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Master.out</file>
+            <file>$PROJ_DIR$\lib\PLC-uart.h</file>
+            <file>$PROJ_DIR$\lib\stm8s.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim3.h</file>
+            <file>$PROJ_DIR$\Debug\List\Master.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.o</file>
+            <file>$PROJ_DIR$\lib\stm8s_exti.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_itc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.o</file>
+            <file>$PROJ_DIR$\lib\stm8s_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm8s_gpio.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-uart.pbi</file>
+            <file>$PROJ_DIR$\lib\stm8s_conf.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Master.pbd</file>
+            <file>$PROJ_DIR$\lib\PLC-gpio.h</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim4.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_flash.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
             <file>$PROJ_DIR$\lib\PLC-master.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-master.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PLC-master.o</file>
+            <file>$PROJ_DIR$\lib\stm8s_tim2.h</file>
+            <file>$PROJ_DIR$\lib\stm8s_clk.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 5 26</file>
+                    <file> 11 15</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\Master.out</name>
-            <outputs>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 21</file>
-                </tool>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 26</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 18 22 7 43 19 9 27</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lib\stm8s_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 16</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 15</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 28 2 29 1 3 25 20 8 24 12 17</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 2 24 25 17 1 20 28 29 3 8 12</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+                <tool>
                     <name>ICCSTM8</name>
                     <file> 22</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 23</file>
-                </tool>
-                <tool>
                     <name>__cstat</name>
-                    <file> 0</file>
+                    <file> 45</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 2 29 1 3 25 28 20 8 24 12 17 33 6 46 41 39 34 42 37 38 35 36 40</file>
+                    <name>BICOMP</name>
+                    <file> 34 13 46 8 12 14 40 31 36 20 44 21 41 10 35 29 17 24 43 33 27 39 38</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 2 8 39 34 6 3 41 33 46 29 28 12 40 35 36 17 1 25 20 24 42 37 38</file>
+                    <name>ICCSTM8</name>
+                    <file> 13 29 44 17 34 24 21 43 14 33 20 31 12 36 40 46 8 27 39 38 10 35 41</file>
                 </tool>
             </inputs>
         </file>
@@ -135,49 +93,22 @@
             <name>$PROJ_DIR$\lib\PLC-gpio.c</name>
             <outputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 7</file>
+                    <name>BICOMP</name>
+                    <file> 25</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 11</file>
+                    <name>ICCSTM8</name>
+                    <file> 23</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 33 2 29 1 3 25 28 20 8 24 12 17</file>
-                </tool>
-                <tool>
                     <name>BICOMP</name>
-                    <file> 29 28 2 12 3 8 33 17 1 25 20 24</file>
+                    <file> 29 24 13 33 17 43 31 20 44 34 21 14</file>
                 </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lib\PLC-uart.c</name>
-            <outputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 19</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 13</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 14</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 6 2 29 1 3 25 28 20 8 24 12 17 46 41 39 34 42 37 38 35 36 40</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 2 3 39 34 8 41 46 29 28 12 40 35 36 6 17 1 25 20 24 42 37 38</file>
+                    <file> 31 13 29 44 17 34 24 21 43 14 33 20</file>
                 </tool>
             </inputs>
         </file>
@@ -185,22 +116,91 @@
             <name>$PROJ_DIR$\lib\PLC-master.c</name>
             <outputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 43</file>
+                    <name>BICOMP</name>
+                    <file> 37</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 45</file>
+                    <name>ICCSTM8</name>
+                    <file> 42</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCSTM8</name>
-                    <file> 46 2 29 1 3 25 28 20 8 24 12 17 41 39 34 42 37 38 35 36 40 6</file>
+                    <name>BICOMP</name>
+                    <file> 21 13 38 40 20 10 44 41 46 34 14 12 29 17 24 43 33 39 8 36 27 35</file>
                 </tool>
                 <tool>
+                    <name>ICCSTM8</name>
+                    <file> 36 13 29 44 17 34 24 21 43 14 33 20 40 46 8 27 39 38 10 35 41 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\PLC-uart.c</name>
+            <outputs>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 2 6 38 24 35 25 40 39 17 1 20 41 29 3 28 8 12 37 34 46 42 36</file>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29 24 13 33 17 43 12 20 44 34 21 14</file>
+                </tool>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 12 13 29 44 17 34 24 21 43 14 33 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\stm8s_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13 14 34 20 44 21 24 29 17 43 33</file>
+                </tool>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 24 13 29 44 17 34 21 43 14 33 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Master.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 32 22 23 42 16 5 18</file>
                 </tool>
             </inputs>
         </file>

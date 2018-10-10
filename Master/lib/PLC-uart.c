@@ -1,12 +1,11 @@
 #include "PLC-uart.h"
-#include "PLC-master.h"
 
 Queue Q_data;
 
 /* Queue Init */
 void Queue_Init()
 {
-        uint8_t i;
+    uint8_t i;
 	Q_data.MAX = 100;
 	for(i=0;i<100;i++)
           Q_data.data[i] = '\0';
@@ -23,7 +22,7 @@ void Queue_Push(uint8_t data)
 		if(Q_data.rear==Q_data.MAX-1)
 			Q_data.rear = -1;
 		Q_data.data[++Q_data.rear] = data;
-		Q_data.item_count ++;
+		Q_data.item_count ++;	
 	}
 }
 
@@ -65,7 +64,7 @@ void Fn_UART_Puts (char *_vruc_String)
 {
     while(*_vruc_String)
     {
-        Fn_UART_SendChar(*_vruc_String);
+        Fn_UART_PutChar(*_vruc_String);
         _vruc_String++;
     }
 }
@@ -78,7 +77,7 @@ void Fn_UART_PutInt(int8_t _vruc_Int)
 	uint8_t _str[5];
 	if(_vruc_Int==0)
 	{
-		Fn_UART_SendChar('0');	
+		Fn_UART_PutChar('0');	
 		return;
 	}
 	
@@ -86,7 +85,7 @@ void Fn_UART_PutInt(int8_t _vruc_Int)
 		_str[i] = '\0';
 	if(_vruc_Int<0)
 	{
-		Fn_UART_SendChar('-');
+		Fn_UART_PutChar('-');
 		_vruc_Int *= -1;
 	}
 	j = 0;
@@ -96,7 +95,7 @@ void Fn_UART_PutInt(int8_t _vruc_Int)
 		_vruc_Int/=10;
 	}
 	for(i=j-1; i>=0; i--)
-		Fn_UART_SendChar(_str[i]);
+		Fn_UART_PutChar(_str[i]);
 }
 
 // Rx Interrupt
@@ -123,11 +122,3 @@ void Config_Timer()
   TIM2->CR1 = 0x01;  // Counter enabled
 }
 
-INTERRUPT_HANDLER(TIM2_UPD_OVF_BRK_IRQHandler, 13)
-{
-    uint8_t i;
-    if(master.num_devices != 0)
-      for(i=0; i<master.num_devices; i++)
-        master.time_remaining[master.id_devices[i]]--;
-    TIM2->SR1 = (0<<0);
-}

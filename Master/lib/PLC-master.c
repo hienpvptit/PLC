@@ -25,7 +25,10 @@ void Frame_Reset()
 	// Reset dataframe
 	for(i=0; i<30; i++)
 		frame.data_frame[i] = '\0';
-		
+	
+	// Reset nm_split
+	frame.num_split = 0;
+	
 	// Reset data_split
 	for(i=0; i<7; i++)
 		for(j=0; j<5; j++)
@@ -167,8 +170,8 @@ void Master_DeleteDevice(uint8_t id_device)
 	master.time_remaining[id_device] = 0;
 }
 
-// Master :: Update
-void Master_Update()
+// Master :: Update_1
+void Master_Update_1()
 {
 	uint8_t i;
 	if(master.num_devices==0)
@@ -176,8 +179,77 @@ void Master_Update()
 	for(i=0; i<master.num_devices; i++)
 	{
 		if(master.time_remaining[master.id_devices[i]]<=0)
+		{
+			Fn_UART_Puts("Delete Device! ID = ");
+			Fn_UART_PutInt(master.id_devices[i]);
+			Fn_UART_PutChar('\n');
 			Master_DeleteDevice(master.id_devices[i]);
+		}
 	}
+}
+
+// Master :: Update_2
+void Master_Update_2()
+{
+	uint8_t cmd;
+	uint8_t ID;
+	uint8_t mode;
+	uint8_t temp = 0;
+	uint8_t hum = 0;
+	
+	if(frame.check_stop==1)
+	{
+		Frame_Split();
+		//Frame_Info();
+		cmd = String_Str2Int(frame.frame_split[0]);
+		ID = String_Str2Int(frame.frame_split[1]);
+		switch(cmd)
+		{
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:	// Slave response Master
+				if(ID>0 && ID<10)
+				{
+					if(Master_FindDevice(ID) == -1)
+					{
+						Master_InsertDevice(ID);
+						Fn_UART_Puts("Insert New Device! ID = ");
+						Fn_UART_PutInt(ID);
+						Fn_UART_PutChar('\n');
+					}
+					else
+					{
+						master.time_remaining[ID] = 30;
+						Fn_UART_Puts("Refresh Device! ID = ");
+						Fn_UART_PutInt(ID);
+						Fn_UART_PutChar('\n');	
+					}
+					break;
+				}
+			case 4:	// Slave send data to Master
+				if(ID>0 && ID<10)
+				{
+					mode = 	String_Str2Int(frame.frame_split[2]);
+					switch(mode)
+					{
+						case 1:
+							temp = String_Str2Int(frame.frame_split[3]);
+							break;
+						case 2:
+							hum = String_Str2Int(frame.frame_split[3]);
+							break;
+						case 3:
+							temp = String_Str2Int(frame.frame_split[3]);
+							hum = String_Str2Int(frame.frame_split[4]);
+							break;
+					}
+				}
+				break;		
+		}
+		Frame_Reset();
+    }
 }
 
 // Master Info
@@ -222,6 +294,17 @@ uint8_t String_Str2Int(char *str)
 	for(i=0; i<strlen(str); i++)
 		tmp = tmp*10 + str[i]-48;
 	return tmp;
+}
+
+// Interrupt Master each 1 second
+INTERRUPT_HANDLER(TIM2_UPD_OVF_BRK_IRQHandler, 13)
+{
+    uint8_t i;
+    if(master.num_devices != 0)
+      for(i=0; i<master.num_devices; i++)
+      	if(master.time_remaining[master.id_devices[i]]>=0)
+        	master.time_remaining[master.id_devices[i]]--; 
+    TIM2->SR1 = (0<<0);
 }
 
 

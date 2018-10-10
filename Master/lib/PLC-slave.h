@@ -1,29 +1,10 @@
-#ifndef _PLC_MASTER_H_
-#define _PLC_MASTER_H_
+#ifndef _PLC_SLAVE_H_
+#define _PLC_SLAVE_H_
 
 #include "stm8s.h"
 #include "string.h"
+#include "PLC-gpio.h"
 #include "PLC-uart.h"
-
-#define TIME_REMAIN 30
-/*------------------------------*/
-typedef struct Master
-{
-	uint8_t num_devices;
-	uint8_t id_devices[10];	
-	int8_t time_remaining[10];
-	/*
-		num_devices:
-			Number devices are online
-		id_devices:
-			Id devices are online
-		time_remaining:
-			Time remaining devices. 
-			If time remaining == 0 -> Devices is offline
-			Time remaining is being refresh if slave response
-			time_remaining is weight array with id_devices: time_remaining(id_devices[])
-	*/
-} Master;
 
 /*------------------------------*/
 typedef struct Frame
@@ -49,8 +30,8 @@ typedef struct Frame
 							
 					2 - Master Control
 						Example dataFrame:
-							2/1/d1/on  -> Control d1 in Slave have ID = 1 to on
-							2/3/d2/off -> Control d2 in Slave have ID = 3 to off
+							2/1/1/1  -> Control C1 in Slave have ID = 1 to on
+							2/3/2/0  -> Control C2 in Slave have ID = 3 to off
 							
 					3 - Slave response Master
 						Example dataFrame:
@@ -63,23 +44,26 @@ typedef struct Frame
 							4/1/3/27/60		-> Slave have ID = 1 send Temp/Hum = 27/60
 		 */
 } Frame;
+/*-----------------------*/
+typedef struct Slave
+{
+	uint8_t ID;
+	int8_t time_remaining;
+}Slave;
 
+/*-----------------------*/
 void Frame_Reset();
 void Frame_Catch(uint8_t ch);
 void Frame_Split();
 void Frame_Info();
-/* */
-void Master_Reset();
-void Master_InsertDevice(uint8_t id_device);
-int8_t Master_FindDevice(uint8_t id_device);
-void Master_DeleteDevice(uint8_t id_device);
-void Master_Update_1();
-void Master_Update_2();
-void Master_Info();
-/**/
+/*-----------------------*/
+void Slave_Reset();
+void Slave_Update_1();
+
 void String_nCopy(char *str_des, char *str_src, uint8_t start, uint8_t finish);
 uint8_t String_Str2Int(char *str);
 
 extern Frame frame;
-extern Master master;
+extern Slave slave;
+
 #endif
