@@ -20,7 +20,7 @@ typedef struct Queue{
 	int8_t rear;            // Rear Index
 	uint8_t item_count;     // Number of Queue at present
 }Queue;
-
+extern uint8_t test_count;
 extern Queue Q_data;
 
 // Queue Init

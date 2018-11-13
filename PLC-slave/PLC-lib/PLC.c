@@ -2,7 +2,7 @@
 
 Queue Q_data;
 Frame frame;
-
+uint8_t test_count = 0;
 /* Queue Init */
 void Queue_Init()
 {
@@ -18,6 +18,7 @@ void Queue_Init()
 /* Queue Push */
 void Queue_Push(uint8_t data)
 {
+	//Fn_UART_Puts("#push#");
 	if(Q_data.item_count<=Q_data.MAX)
 	{
 		if(Q_data.rear==Q_data.MAX-1)

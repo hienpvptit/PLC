@@ -6,7 +6,7 @@ Slave slave;
 /* Slave */
 void Slave_Reset()
 {
-	slave.ID = 1;
+	slave.ID = 2;
 	slave.time_remaining = 0;	
 }
 
@@ -22,6 +22,8 @@ void Slave_Update_1()
 	}	
 }
 
+uint8_t ss = 0;
+
 // Slave :: Update 2
 void Slave_Update_2()
 {
@@ -31,16 +33,17 @@ void Slave_Update_2()
 	uint8_t status;
 	
 	if(frame.check_stop==1)
-	{
-		Frame_Split();
+	{         
+        Frame_Split();
 		//Frame_Info();
+		 
 		cmd = String_Str2Int(frame.frame_split[0]);
 		ID = String_Str2Int(frame.frame_split[1]);
 		switch(cmd)
 		{
 			case 1:
 				break;
-			case 2:
+			case 2:  
 				if(ID==slave.ID)
 				{
 					device = String_Str2Int(frame.frame_split[2]);
@@ -56,9 +59,6 @@ void Slave_Update_2()
 						case 3:
 							digitalWrite(C5, status);
 							break;
-						case 4:
-							digitalWrite(C6, status);
-							break;
 					}
 				}
 				break;
@@ -71,10 +71,12 @@ void Slave_Update_2()
     }	
 }
 
+
 INTERRUPT_HANDLER(TIM2_UPD_OVF_BRK_IRQHandler, 13)
 {
     if(slave.time_remaining>=0)
     	slave.time_remaining--;
+
     TIM2->SR1 = (0<<0);
 }
 

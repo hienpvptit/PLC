@@ -5,10 +5,13 @@ int main( void )
 {
   Slave_Reset();
   Frame_Reset();
+  Queue_Init();
+    
   Config_Uart();
   Config_Timer();
-  
+  GPIO_Setup();
   enableInterrupts();
+  test_count = 0;
   while(1)
   {
     if(Q_data.item_count != 0)

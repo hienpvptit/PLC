@@ -64,9 +64,12 @@ void Fn_UART_PutInt(int8_t _vruc_Int)
 // Rx Interrupt
 INTERRUPT_HANDLER(UART1_RX_IRQHandler, 18)
 {
-  uint8_t tmp = UART1->DR;
-  if(tmp>=33 && tmp<=126)
-    Queue_Push(tmp);
+  uint16_t tmp = UART1->DR;
+  if((tmp>=47 && tmp<=58) || (tmp>=65 && tmp<=90))
+  {
+	  	uint8_t tmp2 = (uint8_t)tmp;
+    	Queue_Push(tmp2);
+  }
 }
 
 /*-----------------------------------------------*/
@@ -83,5 +86,6 @@ void Config_Timer()
   TIM2->ARRL = 0x09; // 8 bit low
   TIM2->IER = 0x01;  // Update interrupt enabled
   TIM2->CR1 = 0x01;  // Counter enabled
+  
 }
 
